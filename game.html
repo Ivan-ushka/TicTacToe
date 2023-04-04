@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic tac toe</title>
+    <link rel="stylesheet" href="assets/styleForGame.css">
+</head>
+<body>
+<header class="header">
+
+</header>
+<main class="main">
+    <div class="img-wrapper">
+        <img class="img-books" src="assets/images/Books.png">
+        <img class="img-cook" src="assets/images/Cook.png">
+    </div>
+
+    <div class="game">
+        <table class="game-table">
+            <tr class="a">
+                <td class="a" onclick="move('aa')"></td>
+                <td class="b" onclick="move('ab')"></td>
+                <td class="c" onclick="move('ac')"></td>
+            </tr>
+            <tr class="b">
+                <td class="a" onclick="move('ba')"></td>
+                <td class="b" onclick="move('bb')"></td>
+                <td class="c" onclick="move('bc')"></td>
+            </tr>
+            <tr class="c">
+                <td class="a" onclick="move('ca')"></td>
+                <td class="b" onclick="move('cb')"></td>
+                <td class="c" onclick="move('cc')"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="buttons-choose-player">
+        <p class="text">Choose, who start first</p>
+        <button class="button-X" onclick="setPlayer('X')">X</button>
+        <button class="button-Y" onclick="setPlayer('O')">O</button>
+    </div>
+</main>
+<footer class="footer">
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
